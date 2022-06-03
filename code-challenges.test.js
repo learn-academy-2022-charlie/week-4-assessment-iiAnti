@@ -1,7 +1,7 @@
 // ASSESSMENT 4: JavaScript Coding Practical Questions with Jest
 
-const { PassThrough } = require("stream")
-const { describe } = require("yargs")
+// const { PassThrough } = require("stream")
+// const { describe } = require("yargs")
 
 // Please read all questions thoroughly
 // Pseudo coding is REQUIRED
@@ -93,6 +93,11 @@ const { describe } = require("yargs")
             })
         })
 
+        // I failed
+        // ● twoArray › takes an array of numbers and returns an array of the minimum and maximum numbers in that order
+
+        // ReferenceError: twoArray is not defined
+
 
 // const nums1 = [3, 56, 90, -8, 0, 23, 6]
 // Expected output: [-8, 90]
@@ -101,6 +106,11 @@ const { describe } = require("yargs")
 
 
 // b) Create the function that makes the test pass.
+
+        // create a function called twoArray
+        // function will take in a conditional
+        // if the number of the .indexOf is greater than -8 or less than 90 then none of those numbers will be output.
+        // sort the new array for least to greatest with .sort()
 
 
 // --------------------3) Create a function that takes in two arrays as arguments and returns one array with no duplicate values. STRETCH: Use the spread operator to pass in a dynamic number of arguments.
