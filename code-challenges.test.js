@@ -15,9 +15,22 @@
 
 // a) Create a test with an expect statement using the variable provided. HINT: Check out this resource: https://jestjs.io/docs/expect#expectarraycontainingarray
 
-const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+// create a describe it test that takes in tow arrays and expects the output to be the first of the array taken out and the rest of the values mixed
+    describe("unorderedArray", () => {
+        const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+        const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+        it("takes in an array, removes the first item from the array and shuffles the remaining content", () => {
+     const expected1 = ["yellow", "blue", "pink", "green"]
+     const expected2 = ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
+            expect(unorderedArray(colors1)).toEqual(expect.arrayContaining(expected1))
+            expect(unorderedArray(colors2)).toEqual(expect.arrayContaining(expected2))
+        })
+    })
+
+// const colors1 = ["purple", "blue", "green", "yellow", "pink"]
 // Expected output example (can be a different order): ["yellow", "blue", "pink", "green"]
-const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+
+// const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
 // Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
 
 
