@@ -112,10 +112,51 @@
         // if the number of the .indexOf is greater than -8 or less than 90 then none of those numbers will be output.
         // sort the new array for least to greatest with .sort()
 
+            const twoArray = (order) => {
+                let emptyArray = []
+                let thisArray = order.sort((a, b) => a - b)
+                for(let i =0; i <= thisArray.length; i++){
+                    if(thisArray.indexOf[i] > thisArray.indexOf[0] || thisArray.indexOf[i] < thisArray[thisArray.length -1] ){
+                         emptyArray.push(thisArray)
+                    }
+                } return emptyArray
+            }
+            // const twoArray = (order) => {
+            //     let newArray = []
+            //     let thisArray = order.sort((a, b) => a - b)
+            //     return thisArray.filter((i) => {
+            //         if(thisArray.indexOf[i] > thisArray.indexOf[0] || thisArray.indexOf[i] < thisArray[thisArray.length -1] ){
+            //             newArray.push(thisArray)
+            //         }
+            //         return newArray
+            //       }) 
+            // }
+
+
+            // const twoArray = (order) => {
+            //     let emptyArray = []
+            //     for(let i =0; i <= order.length; i++){
+            //         if(order.indexOf[i] > -8 || order.indexOf[i] < 90 ){
+            //             let thisArray = order.sort((a, b) => a - b)
+            //             emptyArray.push(thisArray)
+            //         }
+            //     } return emptyArray
+            // }
+
+
+
+            // this is what I keep getting 
+            // - Array [
+            //     -   -8,
+            //     -   90,
+            //     - ]
+            //     + Array [] I can't find why I keep getting this 
 
 // --------------------3) Create a function that takes in two arrays as arguments and returns one array with no duplicate values. STRETCH: Use the spread operator to pass in a dynamic number of arguments.
 
 // a) Create a test with an expect statement using the variables provided.
+
+            // create a descrite it test that will take two arrays a s arguments adn only one will be return one array with non duplicate values.
 
 const testArray1 = [3, 7, 10, 5, 4, 3, 3]
 const testArray2 = [7, 8, 2, 3, 1, 5, 4]
