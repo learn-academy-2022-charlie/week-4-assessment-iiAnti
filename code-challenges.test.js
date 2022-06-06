@@ -188,9 +188,14 @@
         // const oneArray = (one) => {
         // let thisArray = one.concat()
         //      for(let i = 0; i < one.length; i++){
-        //     }
+            // if(thisArray[i]=== thisArray[i]){
+            //      thisArray -= 1
+            // }
+        //     } return thisArray
         // }
         const oneArray = (one) => {
             let thisArray = one.concat()
-        let uniqueChars = [...new Set(thisArray)]
+        let newOne = [...new Set(thisArray)]
         } 
+
+        // I could not find a way to return this.  what i needed. If i could get a return, it should show the correct answer.
